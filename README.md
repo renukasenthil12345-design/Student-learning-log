@@ -17,34 +17,13 @@ int main() {
     printf("Enter number of entries: ");
     scanf("%d", &n);
 
-    struct Log logs[n];
+    struct Log logsdesign and develop a program that records and manages students’ daily learning activities, including subjects studied and time spent, in order to track progress, improve time management, and enhance learning efficiency.
+📌 Short Version:
+To create a program that logs and monitors student study activities and hours.
+💡 Extended Version (for project record):
+To develop a simple and efficient Student Learning Log system using programming that allows users to input, store, and display study details such as date, subject, and hours. The system helps in analyzing learning patterns and improving academic performance.[n];
 
-    FILE *file = fopen("learning_log.txt", "a");
-
-    if (file == NULL) {
-        printf("Error opening file!\n");
-        return 1;
-    }
-
-    for (i = 0; i < n; i++) {
-        printf("\nEntry %d\n", i + 1);
-
-        printf("Enter Date (DD-MM-YYYY): ");
-        scanf("%s", logs[i].date);
-
-        printf("Enter Subject: ");
-        scanf("%s", logs[i].subject);
-
-        printf("Enter Hours Studied: ");
-        scanf("%f", &logs[i].hours);
-
-        fprintf(file, "Date: %s | Subject: %s | Hours: %.2f\n",
-                logs[i].date, logs[i].subject, logs[i].hours);
-    }
-
-    fclose(file);
-
-    printf("\nData saved successfully to learning_log.txt\n");
-
-    return 0:
-    }
+author 
+s.renuka
+ece department 
+732725106047
